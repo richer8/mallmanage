@@ -223,7 +223,11 @@ export default {
       // 获取当前角色的id
       const res2 = await this.$http.get(`users/${user.id}`);
       this.currRoleId = res2.data.data.rid;
+<<<<<<< HEAD
       this.gitdialogFormVisibleRole = true;
+=======
+      this.dialogFormVisibleRole = true;
+>>>>>>> dev-user
     },
     // 修改用户状态
     async changeUserMgstate(user) {

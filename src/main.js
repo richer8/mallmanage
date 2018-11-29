@@ -5,6 +5,7 @@ import App from './App'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import MyHttpServer from '@/plugins/http.js'
+import moment from 'moment'
 
 import router from './router'
 import '@/assets/css/index.css'
@@ -15,6 +16,9 @@ Vue.use(MyHttpServer)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+Vue.filter('fmtdate',(v)=>{
+  return moment(v).format('YYY-MM-dd')
+}) 
 new Vue({
   el: '#app',
   router,
