@@ -3,11 +3,7 @@ import Router from 'vue-router'
 
 import Login from '@/components/login/login.vue'
 import Home from '@/components/home/home.vue'
-<<<<<<< HEAD
-// import Rights from '@/components/rights/rights.vue'
-=======
 import Users from '@/components/users/users.vue'
->>>>>>> dev-user
 
 Vue.use(Router)
 
